@@ -1,6 +1,6 @@
 # Awesome Claude Code Subagents 🤖
 
-The most comprehensive reference repository for production-ready Claude Code subagents. This collection features battle-tested subagent definitions following best practices and industry standards, continuously updated and maintained by the [VoltAgent](https://github.com/voltagent) open-source AI agent framework maintainers.
+The most comprehensive reference repository for production-ready Claude Code subagents. This collection features battle-tested subagent definitions following best practices and industry standards, continuously updated and maintained by the [VoltAgent](https://github.com/voltagent/voltagent) open-source AI agent framework maintainers.
 
 ## 🎯 What is this?
 
@@ -115,6 +115,60 @@ Research, search, and analysis specialists.
 - **tech-researcher** - Technology research specialist
 - **legacy-modernizer** - Legacy code expert
 
+## 🤖 Understanding Subagents
+
+Subagents are specialized AI assistants that enhance Claude Code's capabilities by providing task-specific expertise. They act as dedicated helpers that Claude Code can call upon when encountering particular types of work.
+
+### What Makes Subagents Special?
+
+**Independent Context Windows**  
+Every subagent operates within its own isolated context space, preventing cross-contamination between different tasks and maintaining clarity in the primary conversation thread.
+
+**Domain-Specific Intelligence**  
+Subagents come equipped with carefully crafted instructions tailored to their area of expertise, resulting in superior performance on specialized tasks.
+
+**Shared Across Projects**  
+After creating a subagent, you can utilize it throughout various projects and distribute it among team members to ensure consistent development practices.
+
+**Granular Tool Permissions**  
+You can configure each subagent with specific tool access rights, enabling fine-grained control over which capabilities are available for different task types.
+
+### Core Advantages
+
+- **Memory Efficiency**: Isolated contexts prevent the main conversation from becoming cluttered with task-specific details
+- **Enhanced Accuracy**: Specialized prompts and configurations lead to better results in specific domains
+- **Workflow Consistency**: Team-wide subagent sharing ensures uniform approaches to common tasks
+- **Security Control**: Tool access can be restricted based on subagent type and purpose
+
+### Getting Started with Subagents
+
+**1. Access the Subagent Manager**
+```bash
+/agents
+```
+
+**2. Create Your Subagent**
+- Choose between project-specific or global subagents
+- Let Claude generate an initial version, then refine it to your needs
+- Provide detailed descriptions of the subagent's purpose and activation triggers
+- Configure tool access (leave empty to inherit all available tools)
+- Customize the system prompt using the built-in editor (press `e`)
+
+**3. Deploy and Utilize**
+Your subagent becomes immediately available. Claude Code will automatically engage it when suitable, or you can explicitly request its help:
+```
+> Have the code-reviewer subagent analyze my latest commits
+```
+
+### Subagent Storage Locations
+
+| Type | Path | Availability | Precedence |
+|------|------|--------------|------------|
+| Project Subagents | `.claude/agents/` | Current project only | Higher |
+| Global Subagents | `~/.claude/agents/` | All projects | Lower |
+
+Note: When naming conflicts occur, project-specific subagents override global ones.
+
 ## ⭐ Featured Subagents
 
 1. [Backend Developer](categories/01-core-development/backend-developer.md) - Scalable API development
@@ -125,21 +179,34 @@ Research, search, and analysis specialists.
 
 ## 🛠️ How to Use Subagents
 
-### With Claude Code
-1. Create a `.claude/subagents/` directory in your project
-2. Copy the subagent definition file
-3. Claude Code will automatically recognize and use the subagent
+### Setting Up in Claude Code
+1. Place subagent files in `.claude/agents/` within your project
+2. Claude Code automatically detects and loads the subagents
+3. Invoke them naturally in conversation or let Claude decide when to use them
 
-### With VoltAgent Framework
+### Creating New Subagents - Step by Step
+
+**Step 1: Launch the Agent Interface**
 ```bash
-# Install VoltAgent CLI
-npm install -g @voltagent/cli
+/agents
+```
 
-# Add a subagent
-voltagent add backend-developer
+**Step 2: Choose "Create New Agent"**
+- Decide on project-level (current project) or user-level (all projects) scope
 
-# Use in your workflow
-voltagent run backend-developer "Create a REST API"
+**Step 3: Configure Your Agent**
+- **Recommended approach**: Let Claude draft an initial version, then customize
+- Write a comprehensive description of the agent's role and activation scenarios  
+- Grant specific tool permissions (or leave blank for full access)
+- Browse available tools through the interface for easy selection
+- Edit the system prompt directly by pressing `e` for advanced customization
+
+**Step 4: Save and Start Using**
+- Your agent is instantly ready for use
+- Claude automatically delegates appropriate tasks to it
+- Or manually invoke it:
+```
+> Ask the code-reviewer agent to examine my pull request
 ```
 
 ## 📖 Subagent Structure
@@ -177,10 +244,9 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## 👥 Maintainers
 
-This repository is maintained by the [VoltAgent](https://github.com/voltagent) team:
+This repository is maintained by the [VoltAgent](https://github.com/voltagent/voltagent) team:
 
-- Core maintainers of the VoltAgent open-source AI agent framework
-- Active contributors to the Claude Code ecosystem
+- Core maintainers of the VoltAgent open-source AI agent framework and community member
 - Committed to best practices and production readiness
 
 ## 📄 License
