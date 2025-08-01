@@ -1,65 +1,38 @@
-# 🤖 awesome-claude-code-subagents
+# Awesome Claude Subagents 🤖
 
-A curated list of Claude sub-agent designs, helper prompts, and modular tools that make it easier to build multi-step AI workflows — especially for coding, reasoning, and structured task delegation.
+A curated collection of production-ready Claude Code subagents for various development tasks.
 
-This collection focuses on **Claude-based sub-agents**: small, focused units that help orchestrate or handle specific steps within a larger AI agent system.
+## 🚀 Quick Start
 
----
+1. Browse categories to find the subagent you need
+2. Copy the subagent definition
+3. Use with Claude Code or integrate into your workflow
 
-## 🧩 What Are Sub-Agents?
+## 📚 Categories
 
-Sub-agents (or helper agents) are modular AI behaviors that handle isolated responsibilities — like:
+- **[Core Development](categories/01-core-development/)** - Backend, Frontend, API development
+- **[Language Specialists](categories/02-language-specialists/)** - Language-specific experts
+- **[Infrastructure](categories/03-infrastructure/)** - DevOps, Cloud, Deployment
+- **[Quality & Security](categories/04-quality-security/)** - Testing, Security, Code Review
+- **[Data & AI](categories/05-data-ai/)** - Data Engineering, ML, AI
+- **[Developer Experience](categories/06-developer-experience/)** - Tooling, Refactoring
+- **[Specialized Domains](categories/07-specialized-domains/)** - Payment, Blockchain, IoT
+- **[Business & Product](categories/08-business-product/)** - PM, Business Analysis
+- **[Meta & Orchestration](categories/09-meta-orchestration/)** - Agent Coordination
+- **[Research & Analysis](categories/10-research-analysis/)** - Research, Search
 
-- 🔍 Searching for files
-- 🛠 Refactoring code blocks
-- 🧠 Suggesting architecture changes
-- 📄 Generating documentation
-- 📦 Running tests or validations
+## ⭐ Popular Subagents
 
-In Claude-based systems, sub-agents help break down complex coding workflows into reliable, explainable, and reusable steps.
+1. [Backend Developer](categories/01-core-development/backend-developer.md)
+2. [Frontend Developer](categories/01-core-development/frontend-developer.md)
+3. [Agent Organizer](categories/09-meta-orchestration/agent-organizer.md)
+4. [Code Reviewer](categories/04-quality-security/code-reviewer.md)
+5. [Data Engineer](categories/05-data-ai/data-engineer.md)
 
----
+## 🤝 Contributing
 
-## 📦 What's Inside?
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-- 🧠 **Claude Prompt Patterns for Sub-Agents**  
-  Examples of how to structure prompts for focused responsibilities.
+## 📄 License
 
-- ⚙️ **Sub-Agent Templates**  
-  Standard input/output shapes for common tasks like refactoring, summarizing, or evaluating code.
-
-- 🛠 **Real-World Use Cases**  
-  Modular building blocks for larger Claude agents (e.g., supervisors, tool-using agents, CI assistants).
-
-- 🌐 **Related Projects**  
-  Pointers to open source frameworks using sub-agent strategies.
-
----
-
-## 🧪 Example Sub-Agent Patterns
-
-- `codeReviewerAgent(prompt, diff) → suggestions[]`
-- `functionExplainerAgent(code) → explanation`
-- `fileRouterAgent(filePaths[], goal) → relevantFiles[]`
-- `testWriterAgent(fnCode) → testCode`
-
-Each sub-agent focuses on one responsibility, and can be composed into more complex Claude agents.
-
----
-
-## 🤝 Contribute
-
-Pull requests and issue suggestions welcome!  
-If you're building Claude-based agents or helper functions, feel free to share your patterns here.
-
----
-
-## 📚 Related
-
-- [VoltAgent](https://github.com/voltagent/voltagent) – Open-source TypeScript AI agent framework with Claude support
-
----
-
-## 📝 License
-
-MIT
+MIT License - see [LICENSE](LICENSE)
