@@ -205,6 +205,17 @@ Research, search, and analysis specialists.
 - [**market-researcher**](categories/10-research-analysis/market-researcher.md) - Market analysis and consumer insights
 - [**data-researcher**](categories/10-research-analysis/data-researcher.md) - Data discovery and analysis expert
 
+### [11. Red Team & Bug Bounty](categories/11-red-team-bug-bounty/)
+Advanced offensive security specialists for red team operations and bug bounty hunting.
+
+- [**bug-bounty-hunter**](categories/11-red-team-bug-bounty/bug-bounty-hunter.md) - Expert bug bounty hunter specializing in web application security and responsible disclosure
+- [**red-team-operator**](categories/11-red-team-bug-bounty/red-team-operator.md) - Advanced persistent threat simulation and MITRE ATT&CK framework expert
+- [**web-app-pentester**](categories/11-red-team-bug-bounty/web-app-pentester.md) - Modern web application penetration testing and OWASP methodology specialist
+- [**osint-specialist**](categories/11-red-team-bug-bounty/osint-specialist.md) - Open Source Intelligence gathering and reconnaissance expert
+- [**backend-security-coder**](categories/11-red-team-bug-bounty/backend-security-coder.md) - Secure backend development and API security implementation
+- [**frontend-security-coder**](categories/11-red-team-bug-bounty/frontend-security-coder.md) - Client-side security and XSS prevention specialist
+- [**mobile-security-coder**](categories/11-red-team-bug-bounty/mobile-security-coder.md) - Mobile application security patterns and vulnerability assessment
+
 ## 🤖 Understanding Subagents
 
 Subagents are specialized AI assistants that enhance Claude Code's capabilities by providing task-specific expertise. They act as dedicated helpers that Claude Code can call upon when encountering particular types of work.
